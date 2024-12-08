@@ -1,6 +1,8 @@
-package constructor.example5;
+package constructor.example6;
 
 public class Super {
 	
-	int num=100;
+	void display() {
+		System.out.println("Parent class method");
+	}
 }
