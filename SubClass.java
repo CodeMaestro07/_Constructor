@@ -1,25 +1,17 @@
-package constructor.example8;
+package constructor.example11;
 
-
-public class SubClass extends ConstructorCallParent{
-
+public class SubClass extends SuperExplicit{
 	SubClass(){
+		super();
 		System.out.println("Constructor of subclass");
-	}
-	SubClass(int num){
-		System.out.println("Constructor with arg");
 	}
 	void display() {
 		System.out.println("Hello");
+		
 	}
 	
 	public static void main(String[] args) {
-		
-		SubClass c1=new SubClass();
-		c1.display();
-		
-		SubClass c2=new SubClass(10);
-		c2.display();
-		
+		SubClass obj=new SubClass();
+		obj.display();
 	}
 }
